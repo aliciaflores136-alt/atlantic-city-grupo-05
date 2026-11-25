@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MARKETING | Atlantic City</title>
+        <link rel="stylesheet" href="/vendor/bootstrap.min.css"><link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <div class="marca">
+                <img src="../recursos/logo.png" alt="Atlantic City Casino">
+            </div>
+            <nav aria-label="Navegación principal">
+                <a href="panel.html">Panel principal</a>
+                <a href="clientes.html">Clientes</a>
+                <a href="visitas.html">Visitas y juegos</a>
+                <a href="atencion.html">Atención al cliente</a>
+                <a href="../index.html" id="salir">Salir</a>
+            </nav>
+        </header>
+        <main>
+            <p id="aviso" role="alert" hidden="hidden"></p><h1>Marketing</h1>
+            <p class="subtitulo">Configurar la campaña automática del piloto</p>
+            <form class="tarjeta" id="campana" hidden>
+                <h2 id="nombre"></h2>
+                <label for="segmento">Segmento que recibirá la promoción</label>
+                <select id="segmento" required class=" form-select"></select>
+                <div class="acciones"><button>Guardar condición</button></div>
+            </form>
+            <p role="status" id="estado"></p>
+            <a href="clientes.html">Volver a Clientes</a>
+        </main>
+        <script src="../js/comun.js"></script>
+        <script src="../js/marketing.js"></script>
+    </body>
+</html>

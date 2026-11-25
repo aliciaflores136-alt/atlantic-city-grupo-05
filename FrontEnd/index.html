@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Iniciar sesión | Atlantic City</title>
+        <link rel="stylesheet" href="/vendor/bootstrap.min.css"><link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <div class="marca">
+                <img src="recursos/logo.png" alt="Atlantic City Casino">
+            </div>
+        </header>
+        <main>
+            <div class="acceso">
+                <section class="presentacion">
+                    <h1>ATLANTIC CITY</h1>
+                    <hr><p>Gestión de clientes y visitas</p>
+                </section>
+                <form id="login" novalidate>
+                    <h2>Iniciar Sesión</h2>
+                    <p>Ingresa tus datos para acceder al sistema</p>
+                    <div class="campo">
+                        <label for="usuario">USUARIO *</label>
+                        <input id="usuario" name="usuario" type="text" required autocomplete="username" placeholder="Ingresa tu usuario" class=" form-control">
+                        <small class="error" id="error-usuario" aria-live="polite"></small>
+                    </div>
+                    <div class="campo">
+                        <label for="clave">CONTRASEÑA *</label>
+                        <input id="clave" name="clave" type="password" required autocomplete="current-password" placeholder="Ingresa tu contraseña" class=" form-control">
+                        <small class="error" id="error-clave" aria-live="polite"></small>
+                    </div>
+                    <button>INGRESAR</button>
+    
+                </form>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="js/comun.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+    </html>

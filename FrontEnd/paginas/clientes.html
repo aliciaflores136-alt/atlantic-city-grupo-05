@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CLIENTES | Atlantic City</title>
+        <link rel="stylesheet" href="/vendor/bootstrap.min.css"><link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <div class="marca">
+                <img src="../recursos/logo.png" alt="Atlantic City Casino">
+            </div>
+            <nav aria-label="Navegación principal">
+                <a href="panel.html">Panel principal</a>
+                <a href="clientes.html">Clientes</a>
+                <a href="visitas.html">Visitas y juegos</a>
+                <a href="atencion.html">Atención al cliente</a>
+                <a href="../index.html" id="salir">Salir</a>
+            </nav>
+        </header>
+        <main>
+            <h1>CLIENTES</h1>
+            <p class="subtitulo">Consulta y registra los datos de los clientes</p>
+            <p id="aviso" class="aviso" role="status" hidden></p>
+            <div class="barra">
+                <form id="buscar">
+                    <label for="busqueda">Buscar por documento, nombres o apellidos</label>
+                    <div class="fila">
+                        <input id="busqueda" type="search" class=" form-control">
+                        <button class="oscuro">Buscar</button>
+                    </div>
+                </form>
+                <a class="boton secundario" href="marketing.html" id="marketing" hidden>Marketing</a>
+                <a class="boton" href="cliente.html">Nuevo cliente</a>
+            </div>
+            <div class="tabla">
+                <table class=" table table-hover align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col">Código</th>
+                            <th scope="col">Tipo de documento</th>
+                            <th scope="col">N.º de documento</th>
+                            <th scope="col">Nombres y apellidos</th>
+                            <th scope="col">Segmento</th>
+                        <th scope="col">Acción</th></tr>
+                    </thead>
+                    <tbody id="lista-clientes"></tbody>
+                </table>
+            </div>
+            <section class="tarjeta" id="promocion" aria-live="polite" hidden>
+                <h2>Promoción del cliente</h2>
+                <p id="beneficio"></p>
+                <button type="button" id="aceptar" hidden>Confirmar aceptación del cliente</button>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="../js/comun.js"></script>
+        <script src="../js/consulta-clientes.js"></script>
+    </body>
+    </html>

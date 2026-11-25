@@ -1,0 +1,20 @@
+{
+  "name": "atlantic-city-piloto",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Piloto de gesti\u00f3n de clientes del Grupo 5",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env servidor/iniciar.js",
+    "preparar": "node --env-file-if-exists=.env servidor/preparar.js",
+    "test": "node --test pruebas/reglas.test.js",
+    "verificar:mysql": "node --env-file-if-exists=.env pruebas/mysql.js"
+  },
+  "dependencies": {
+    "bootstrap": "5.3.3",
+    "express": "4.21.2",
+    "mysql2": "3.14.1"
+  }
+}

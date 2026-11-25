@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>VISITAS Y JUEGOS | Atlantic City</title>
+        <link rel="stylesheet" href="/vendor/bootstrap.min.css"><link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <div class="marca">
+                <img src="../recursos/logo.png" alt="Atlantic City Casino"></div>
+                <nav aria-label="Navegación principal">
+                    <a href="panel.html">Panel principal</a>
+                    <a href="clientes.html">Clientes</a>
+                    <a href="visitas.html">Visitas y juegos</a>
+                    <a href="atencion.html">Atención al cliente</a>
+                    <a href="../index.html" id="salir">Salir</a>
+                </nav>
+            </header>
+            <main>
+                <h1>VISITAS Y JUEGOS</h1>
+                <p class="subtitulo">Consulta las visitas y los juegos utilizados.</p>
+                <p id="aviso" class="aviso" role="status" hidden></p>
+                <section class="tarjeta"><div class="barra">
+                    <a class="boton" href="visita.html">Nueva visita</a>
+                </div>
+                <div class="tabla">
+                    <table class=" table table-hover align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cliente</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Horario</th>
+                                <th scope="col">Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lista-visitas"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="../js/comun.js"></script>
+        <script src="../js/visitas.js"></script>
+    </body>
+    </html>

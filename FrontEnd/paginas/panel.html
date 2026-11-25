@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PANEL PRINCIPAL | Atlantic City</title>
+        <link rel="stylesheet" href="/vendor/bootstrap.min.css"><link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <div class="marca">
+                <img src="../recursos/logo.png" alt="Atlantic City Casino">
+            </div>
+            <nav aria-label="Navegación principal">
+                <a href="panel.html">Panel principal</a>
+                <a href="clientes.html">Clientes</a>
+                <a href="visitas.html">Visitas y juegos</a>
+                <a href="atencion.html">Atención al cliente</a>
+                <a href="../index.html" id="salir">Salir</a>
+            </nav>
+        </header>
+        <main>
+            <h1>PANEL PRINCIPAL</h1>
+            <p class="subtitulo">Selecciona el módulo que deseas utilizar</p>
+            <p id="aviso" class="aviso" role="status" hidden></p>
+            <div class="modulos">
+                <section class="tarjeta modulo">
+                    <h2>CLIENTES</h2>
+                    <p>Registra y consulta los datos de los clientes</p>
+                    <p class="numero" id="total-clientes"></p>
+                    <a class="boton" href="clientes.html">Abrir Clientes</a>
+                </section>
+                <section class="tarjeta modulo">
+                    <h2>VISITAS Y JUEGOS</h2>
+                    <p>Registra las visitas y los juegos utilizados</p>
+                    <p class="numero" id="total-visitas"></p>
+                    <a class="boton" href="visitas.html">Abrir Visitas</a>
+                </section>
+                <section class="tarjeta modulo">
+                    <h2>ATENCIÓN AL CLIENTE</h2>
+                    <p>Registra casos y consulta su seguimiento</p>
+                    <p class="numero" id="total-atencion"></p>
+                    <a class="boton" href="atencion.html">Abrir Atención</a>
+                </section>
+            </div>
+        <section class="tarjeta mt-4"><h2>Reportes</h2>
+<form id="filtros"><label>Desde <input name="desde" type="date"></label> <label>Hasta <input name="hasta" type="date"></label>
+<label>Mínimo de visitas <input name="minimo" type="number" min="0" value="0" required></label> <button>Consultar</button></form>
+<h3>Actividad de clientes</h3><table class="table"><thead><tr><th>Cliente</th><th>Segmento</th><th>Visitas</th><th>Gasto</th></tr></thead><tbody id="actividad"></tbody></table>
+<h3>Usos de promociones</h3><table class="table"><thead><tr><th>Promoción</th><th>Usos</th></tr></thead><tbody id="usos"></tbody></table></section></main>
+        <footer> </footer>
+        <script src="../js/comun.js"></script>
+        <script src="../js/panel.js"></script>
+    </body>
+    </html>

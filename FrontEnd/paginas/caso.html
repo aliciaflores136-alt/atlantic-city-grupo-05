@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NUEVO CASO | Atlantic City</title>
+        <link rel="stylesheet" href="/vendor/bootstrap.min.css"><link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <div class="marca">
+                <img src="../recursos/logo.png" alt="Atlantic City Casino">
+            </div>
+            <nav aria-label="Navegación principal">
+                <a href="panel.html">Panel principal</a>
+                <a href="clientes.html">Clientes</a>
+                <a href="visitas.html">Visitas y juegos</a>
+                <a href="atencion.html">Atención al cliente</a>
+                <a href="../index.html" id="salir">Salir</a>
+            </nav>
+        </header>
+        <main>
+            <h1>NUEVO CASO</h1>
+            <p class="subtitulo">Completa los datos de la atención.</p>
+            <p id="aviso" class="aviso" role="status" hidden></p>
+            <form id="caso" class="tarjeta" novalidate>
+                <p class="ayuda">Los campos con * son obligatorios.</p>
+                <div class="rejilla">
+                    <div class="campo">
+                        <label for="clienteId">Cliente *</label>
+                        <select id="clienteId" name="clienteId" required class=" form-select">
+                            <option value="">Selecciona una opción</option>
+                        </select>
+                        <small class="error" id="error-clienteId" aria-live="polite"></small>
+                    </div>
+                    <div class="campo">
+                        <label for="visitaId">Visita relacionada</label>
+                        <select id="visitaId" name="visitaId" class=" form-select">
+                            <option value="">Selecciona una opción</option>
+                        </select>
+                        <small class="error" id="error-visitaId" aria-live="polite"></small>
+                    </div>
+                    <div class="campo"><label for="tipo">Tipo de atención</label><select required="required" name="tipo" id="tipo" class="form-select"><option>Consulta</option><option>Queja</option><option>Solicitud</option><option>Problema</option></select><small id="error-tipo" class="error"></small></div><div class="campo">
+                        <label for="asunto">Asunto *</label>
+                        <input id="asunto" name="asunto" type="text" required maxlength="100" class=" form-control">
+                        <small class="error" id="error-asunto" aria-live="polite"></small>
+                    </div>
+                    <div class="campo">
+                        <label for="estado">Estado *</label>
+                        <select id="estado" name="estado" required class=" form-select">
+                            <option value="">Selecciona una opción</option>
+                            <option>Pendiente</option>
+                            <option>En atención</option>
+                            
+                        </select>
+                        <small class="error" id="error-estado" aria-live="polite"></small>
+                    </div>
+                    <div class="campo">
+                        <label for="descripcion">Descripción *</label>
+                        <textarea id="descripcion" name="descripcion" required maxlength="600" class=" form-control"></textarea>
+                        <small class="error" id="error-descripcion" aria-live="polite"></small>
+                    </div>
+                    <div class="acciones">
+                        <a class="boton secundario" href="atencion.html">Cancelar</a>
+                        <button disabled>Guardar caso</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer> </footer>
+        <script src="../js/comun.js"></script>
+        <script src="../js/atencion.js"></script>
+    </body>
+    </html>

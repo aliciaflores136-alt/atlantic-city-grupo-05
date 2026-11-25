@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SEGUIMIENTO DEL CASO | Atlantic City</title>
+        <link rel="stylesheet" href="/vendor/bootstrap.min.css"><link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <div class="marca">
+                <img src="../recursos/logo.png" alt="Atlantic City Casino">
+            </div>
+            <nav aria-label="Navegación principal">
+                <a href="panel.html">Panel principal</a>
+                <a href="clientes.html">Clientes</a>
+                <a href="visitas.html">Visitas y juegos</a>
+                <a href="atencion.html">Atención al cliente</a>
+                <a href="../index.html" id="salir">Salir</a>
+            </nav>
+        </header>
+        <main>
+            <h1>SEGUIMIENTO DEL CASO</h1>
+            <p class="subtitulo">Consulta el caso y registra la atención.</p>
+            <p id="aviso" class="aviso" role="status" hidden></p>
+            <form id="seguimiento" class="tarjeta" novalidate>
+                <p class="ayuda">Los campos con * son obligatorios.</p>
+                <div class="rejilla">
+                    <div id="datos-caso" class="ancho"></div>
+                    <div class="campo">
+                        <label for="estado">Estado *</label>
+                        <select id="estado" name="estado" required class=" form-select">
+                            <option value="">Selecciona una opción</option>
+                            <option>Pendiente</option>
+                            <option>En atención</option>
+                            <option>Resuelto</option>
+                        </select>
+                        <small class="error" id="error-estado" aria-live="polite"></small>
+                    </div>
+                    <div class="campo">
+                        <label for="fecha">Fecha de atención *</label>
+                        <input id="fecha" name="fecha" type="datetime-local" required class=" form-control" step="1">
+                        <small class="error" id="error-fecha" aria-live="polite"></small>
+                    </div>
+                    <div class="campo">
+                        <label for="respuesta">Respuesta o solución *</label>
+                        <textarea id="respuesta" name="respuesta" required maxlength="600" class=" form-control"></textarea>
+                        <small class="error" id="error-respuesta" aria-live="polite"></small>
+                    </div>
+                    <div class="acciones">
+                        <a class="boton secundario" href="atencion.html">Cancelar</a>
+                        <button disabled>Guardar seguimiento</button>
+                    </div>
+                    <div id="historial-caso" class="ancho"></div>
+                </div>
+            </form>
+        </main>
+        <footer></footer>
+        <script src="../js/comun.js"></script>
+        <script src="../js/atencion.js"></script>
+    </body>
+    </html>

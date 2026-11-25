@@ -1,0 +1,908 @@
+{
+  "AREAS": [
+    {
+      "IdArea": "AR04",
+      "Area": "Administración"
+    },
+    {
+      "IdArea": "AR01",
+      "Area": "Atención al cliente"
+    },
+    {
+      "IdArea": "AR02",
+      "Area": "Caja"
+    },
+    {
+      "IdArea": "AR03",
+      "Area": "Operaciones"
+    },
+    {
+      "IdArea": "AR05",
+      "Area": "Tecnología"
+    }
+  ],
+  "ATENCIONES": [
+    {
+      "IdAtencion": "S3ABA2A4E0",
+      "IdCliente": "C001",
+      "IdEmpleado": "E001",
+      "TipoAtencion": "Consulta",
+      "FechaAtencion": "2026-11-17 11:10:00",
+      "Asunto": "Consulta sobre una promoción",
+      "Descripcion": "El cliente solicita información sobre una promoción.",
+      "Estado": "Resuelto",
+      "FechaSolucion": "2026-11-17 11:20:00",
+      "Solucion": "Se explicó la promoción al cliente.",
+      "IdUsuarioRegistro": "U001",
+      "IdVisita": "V323AF66AE"
+    }
+  ],
+  "CARGOS": [
+    {
+      "IdCargo": "CA01",
+      "Cargo": "Recepción",
+      "IdArea": "AR01"
+    },
+    {
+      "IdCargo": "CA02",
+      "Cargo": "Atención",
+      "IdArea": "AR01"
+    },
+    {
+      "IdCargo": "CA03",
+      "Cargo": "Cajero",
+      "IdArea": "AR02"
+    },
+    {
+      "IdCargo": "CA04",
+      "Cargo": "Supervisor de sala",
+      "IdArea": "AR03"
+    },
+    {
+      "IdCargo": "CA05",
+      "Cargo": "Asistente administrativo",
+      "IdArea": "AR04"
+    },
+    {
+      "IdCargo": "CA06",
+      "Cargo": "Soporte técnico",
+      "IdArea": "AR05"
+    },
+    {
+      "IdCargo": "CA07",
+      "Cargo": "Administrador del sistema",
+      "IdArea": "AR05"
+    },
+    {
+      "IdCargo": "CA08",
+      "Cargo": "Encargado del registro de clientes",
+      "IdArea": "AR01"
+    }
+  ],
+  "CLIENTES": [
+    {
+      "IdCliente": "C001",
+      "Nombres": "Ana María",
+      "Apellidos": "Torres Salazar",
+      "TipoDocumento": "DNI",
+      "NumeroDocumento": "70000001",
+      "PaisEmisorDocumento": "Perú",
+      "Nacionalidad": "Peruana",
+      "Telefono": null,
+      "Correo": "cliente01@example.org",
+      "CodigoUbigeo": "150122",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-10-01 00:00:00",
+      "IdSegmento": "SG02",
+      "IdUsuarioRegistro": "U001",
+      "Estado": "A"
+    },
+    {
+      "IdCliente": "C002",
+      "Nombres": "Bruno",
+      "Apellidos": "Ramos Díaz",
+      "TipoDocumento": "DNI",
+      "NumeroDocumento": "70000002",
+      "PaisEmisorDocumento": "Perú",
+      "Nacionalidad": "Peruana",
+      "Telefono": null,
+      "Correo": "cliente02@example.org",
+      "CodigoUbigeo": "150140",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-10-02 00:00:00",
+      "IdSegmento": "SG01",
+      "IdUsuarioRegistro": "U002",
+      "Estado": "A"
+    },
+    {
+      "IdCliente": "C003",
+      "Nombres": "Camila",
+      "Apellidos": "Vega Rojas",
+      "TipoDocumento": "DNI",
+      "NumeroDocumento": "70000003",
+      "PaisEmisorDocumento": "Perú",
+      "Nacionalidad": "Peruana",
+      "Telefono": null,
+      "Correo": "cliente03@example.org",
+      "CodigoUbigeo": "150136",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-10-03 00:00:00",
+      "IdSegmento": "SG01",
+      "IdUsuarioRegistro": "U003",
+      "Estado": "A"
+    },
+    {
+      "IdCliente": "C004",
+      "Nombres": "Diego",
+      "Apellidos": "Castro León",
+      "TipoDocumento": "DNI",
+      "NumeroDocumento": "70000004",
+      "PaisEmisorDocumento": "Perú",
+      "Nacionalidad": "Peruana",
+      "Telefono": null,
+      "Correo": "cliente04@example.org",
+      "CodigoUbigeo": "150116",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-10-04 00:00:00",
+      "IdSegmento": "SG01",
+      "IdUsuarioRegistro": "U004",
+      "Estado": "A"
+    },
+    {
+      "IdCliente": "C005",
+      "Nombres": "Elena",
+      "Apellidos": "Soto Paredes",
+      "TipoDocumento": "DNI",
+      "NumeroDocumento": "70000005",
+      "PaisEmisorDocumento": "Perú",
+      "Nacionalidad": "Peruana",
+      "Telefono": null,
+      "Correo": "cliente05@example.org",
+      "CodigoUbigeo": "150121",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-10-05 00:00:00",
+      "IdSegmento": "SG02",
+      "IdUsuarioRegistro": "U001",
+      "Estado": "A"
+    },
+    {
+      "IdCliente": "C006",
+      "Nombres": "Fernando",
+      "Apellidos": "Ruiz Medina",
+      "TipoDocumento": "DNI",
+      "NumeroDocumento": "70000006",
+      "PaisEmisorDocumento": "Perú",
+      "Nacionalidad": "Peruana",
+      "Telefono": null,
+      "Correo": "cliente06@example.org",
+      "CodigoUbigeo": "150114",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-10-06 00:00:00",
+      "IdSegmento": "SG01",
+      "IdUsuarioRegistro": "U002",
+      "Estado": "A"
+    },
+    {
+      "IdCliente": "C007",
+      "Nombres": "Gabriela",
+      "Apellidos": "Flores Vargas",
+      "TipoDocumento": "DNI",
+      "NumeroDocumento": "70000007",
+      "PaisEmisorDocumento": "Perú",
+      "Nacionalidad": "Peruana",
+      "Telefono": null,
+      "Correo": "cliente07@example.org",
+      "CodigoUbigeo": "150122",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-10-07 00:00:00",
+      "IdSegmento": "SG01",
+      "IdUsuarioRegistro": "U003",
+      "Estado": "A"
+    },
+    {
+      "IdCliente": "C008",
+      "Nombres": "Hugo",
+      "Apellidos": "Mendoza Silva",
+      "TipoDocumento": "DNI",
+      "NumeroDocumento": "70000008",
+      "PaisEmisorDocumento": "Perú",
+      "Nacionalidad": "Peruana",
+      "Telefono": null,
+      "Correo": "cliente08@example.org",
+      "CodigoUbigeo": "150140",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-10-08 00:00:00",
+      "IdSegmento": "SG01",
+      "IdUsuarioRegistro": "U004",
+      "Estado": "A"
+    },
+    {
+      "IdCliente": "C009",
+      "Nombres": "Isabel",
+      "Apellidos": "López Herrera",
+      "TipoDocumento": "DNI",
+      "NumeroDocumento": "70000009",
+      "PaisEmisorDocumento": "Perú",
+      "Nacionalidad": "Peruana",
+      "Telefono": null,
+      "Correo": "cliente09@example.org",
+      "CodigoUbigeo": "150136",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-10-09 00:00:00",
+      "IdSegmento": "SG02",
+      "IdUsuarioRegistro": "U001",
+      "Estado": "A"
+    },
+    {
+      "IdCliente": "C010",
+      "Nombres": "José Luis",
+      "Apellidos": "Pérez Molina",
+      "TipoDocumento": "DNI",
+      "NumeroDocumento": "70000010",
+      "PaisEmisorDocumento": "Perú",
+      "Nacionalidad": "Peruana",
+      "Telefono": null,
+      "Correo": "cliente10@example.org",
+      "CodigoUbigeo": "150116",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-10-10 00:00:00",
+      "IdSegmento": "SG01",
+      "IdUsuarioRegistro": "U002",
+      "Estado": "A"
+    },
+    {
+      "IdCliente": "C011",
+      "Nombres": "Lucía",
+      "Apellidos": "García Núñez",
+      "TipoDocumento": "DNI",
+      "NumeroDocumento": "70000011",
+      "PaisEmisorDocumento": "Perú",
+      "Nacionalidad": "Peruana",
+      "Telefono": null,
+      "Correo": "cliente11@example.org",
+      "CodigoUbigeo": "150121",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-10-11 00:00:00",
+      "IdSegmento": "SG01",
+      "IdUsuarioRegistro": "U003",
+      "Estado": "A"
+    },
+    {
+      "IdCliente": "C012",
+      "Nombres": "Mateo",
+      "Apellidos": "Chávez Romero",
+      "TipoDocumento": "DNI",
+      "NumeroDocumento": "70000012",
+      "PaisEmisorDocumento": "Perú",
+      "Nacionalidad": "Peruana",
+      "Telefono": null,
+      "Correo": "cliente12@example.org",
+      "CodigoUbigeo": "150114",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-10-12 00:00:00",
+      "IdSegmento": "SG01",
+      "IdUsuarioRegistro": "U004",
+      "Estado": "A"
+    },
+    {
+      "IdCliente": "C013",
+      "Nombres": "Valentina",
+      "Apellidos": "Rojas Pérez",
+      "TipoDocumento": "Carné de extranjería",
+      "NumeroDocumento": "001234567",
+      "PaisEmisorDocumento": "Perú",
+      "Nacionalidad": "Venezolana",
+      "Telefono": null,
+      "Correo": "cliente13@example.org",
+      "CodigoUbigeo": "150122",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-11-01 00:00:00",
+      "IdSegmento": "SG01",
+      "IdUsuarioRegistro": "U001",
+      "Estado": "A"
+    },
+    {
+      "IdCliente": "C014",
+      "Nombres": "Sofía",
+      "Apellidos": "Muñoz Rivas",
+      "TipoDocumento": "Pasaporte",
+      "NumeroDocumento": "AB1234567",
+      "PaisEmisorDocumento": "Chile",
+      "Nacionalidad": "Chilena",
+      "Telefono": null,
+      "Correo": "cliente14@example.org",
+      "CodigoUbigeo": "150122",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-11-02 00:00:00",
+      "IdSegmento": "SG02",
+      "IdUsuarioRegistro": "U003",
+      "Estado": "A"
+    },
+    {
+      "IdCliente": "C015",
+      "Nombres": "Martín",
+      "Apellidos": "López Vidal",
+      "TipoDocumento": "Pasaporte",
+      "NumeroDocumento": "AR1234567",
+      "PaisEmisorDocumento": "Argentina",
+      "Nacionalidad": "Argentina",
+      "Telefono": null,
+      "Correo": "cliente15@example.org",
+      "CodigoUbigeo": "150140",
+      "Direccion": "Dirección de demostración",
+      "FechaRegistro": "2026-11-03 00:00:00",
+      "IdSegmento": "SG01",
+      "IdUsuarioRegistro": "U001",
+      "Estado": "A"
+    }
+  ],
+  "CLIENTES_PROMOCIONES": [
+    {
+      "IdAsignacion": "AS001",
+      "IdCliente": "C001",
+      "IdPromocion": "P001",
+      "FechaAsignacion": "2026-10-02 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS002",
+      "IdCliente": "C001",
+      "IdPromocion": "P002",
+      "FechaAsignacion": "2026-10-03 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS003",
+      "IdCliente": "C002",
+      "IdPromocion": "P002",
+      "FechaAsignacion": "2026-10-02 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS004",
+      "IdCliente": "C002",
+      "IdPromocion": "P003",
+      "FechaAsignacion": "2026-10-03 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS005",
+      "IdCliente": "C003",
+      "IdPromocion": "P003",
+      "FechaAsignacion": "2026-10-03 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS006",
+      "IdCliente": "C003",
+      "IdPromocion": "P004",
+      "FechaAsignacion": "2026-10-03 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS007",
+      "IdCliente": "C004",
+      "IdPromocion": "P004",
+      "FechaAsignacion": "2026-10-04 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS008",
+      "IdCliente": "C004",
+      "IdPromocion": "P001",
+      "FechaAsignacion": "2026-10-04 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS009",
+      "IdCliente": "C005",
+      "IdPromocion": "P001",
+      "FechaAsignacion": "2026-10-05 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS010",
+      "IdCliente": "C005",
+      "IdPromocion": "P002",
+      "FechaAsignacion": "2026-10-05 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS011",
+      "IdCliente": "C006",
+      "IdPromocion": "P002",
+      "FechaAsignacion": "2026-10-06 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS012",
+      "IdCliente": "C006",
+      "IdPromocion": "P003",
+      "FechaAsignacion": "2026-10-06 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS013",
+      "IdCliente": "C007",
+      "IdPromocion": "P003",
+      "FechaAsignacion": "2026-10-07 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS014",
+      "IdCliente": "C008",
+      "IdPromocion": "P004",
+      "FechaAsignacion": "2026-10-08 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS015",
+      "IdCliente": "C009",
+      "IdPromocion": "P001",
+      "FechaAsignacion": "2026-10-09 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS016",
+      "IdCliente": "C010",
+      "IdPromocion": "P002",
+      "FechaAsignacion": "2026-10-10 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS017",
+      "IdCliente": "C011",
+      "IdPromocion": "P003",
+      "FechaAsignacion": "2026-10-11 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS018",
+      "IdCliente": "C012",
+      "IdPromocion": "P004",
+      "FechaAsignacion": "2026-10-12 00:00:00"
+    },
+    {
+      "IdAsignacion": "AS019",
+      "IdCliente": "C014",
+      "IdPromocion": "P005",
+      "FechaAsignacion": "2026-11-02 00:00:00"
+    },
+    {
+      "IdAsignacion": "CPE5256271",
+      "IdCliente": "C001",
+      "IdPromocion": "P005",
+      "FechaAsignacion": "2026-11-17 09:00:00"
+    }
+  ],
+  "DEPARTAMENTOS": [
+    {
+      "CodigoDepartamento": "15",
+      "Departamento": "Lima"
+    }
+  ],
+  "DETALLES_VISITAS": [
+    {
+      "IdDetalleVisita": "VDB72A6BD9",
+      "IdVisita": "V323AF66AE",
+      "IdJuego": "J001",
+      "CantidadPartidas": 2,
+      "Gasto": 40.0,
+      "Premio": 0.0,
+      "Resultado": "Perdió",
+      "Inconveniente": null
+    },
+    {
+      "IdDetalleVisita": "VDBDD5F414",
+      "IdVisita": "VB4F6782AC",
+      "IdJuego": "J001",
+      "CantidadPartidas": 2,
+      "Gasto": 40.0,
+      "Premio": 0.0,
+      "Resultado": "Perdió",
+      "Inconveniente": null
+    }
+  ],
+  "EMPLEADOS": [
+    {
+      "IdEmpleado": "E001",
+      "Nombres": "Luis Alberto",
+      "Apellidos": "Rojas Peña",
+      "DNI": "90000001",
+      "Correo": "empleado01@example.org",
+      "Telefono": null,
+      "IdCargo": "CA01",
+      "Estado": "A"
+    },
+    {
+      "IdEmpleado": "E002",
+      "Nombres": "Rosa",
+      "Apellidos": "Díaz Castro",
+      "DNI": "90000002",
+      "Correo": "empleado02@example.org",
+      "Telefono": null,
+      "IdCargo": "CA02",
+      "Estado": "A"
+    },
+    {
+      "IdEmpleado": "E003",
+      "Nombres": "Paola",
+      "Apellidos": "León García",
+      "DNI": "90000003",
+      "Correo": "empleado03@example.org",
+      "Telefono": null,
+      "IdCargo": "CA01",
+      "Estado": "A"
+    },
+    {
+      "IdEmpleado": "E004",
+      "Nombres": "Carlos",
+      "Apellidos": "Medina Torres",
+      "DNI": "90000004",
+      "Correo": "empleado04@example.org",
+      "Telefono": null,
+      "IdCargo": "CA02",
+      "Estado": "A"
+    },
+    {
+      "IdEmpleado": "E005",
+      "Nombres": "Mariana",
+      "Apellidos": "López Vega",
+      "DNI": "90000005",
+      "Correo": "empleado05@example.org",
+      "Telefono": null,
+      "IdCargo": "CA03",
+      "Estado": "A"
+    },
+    {
+      "IdEmpleado": "E006",
+      "Nombres": "Jorge",
+      "Apellidos": "Castro Salas",
+      "DNI": "90000006",
+      "Correo": "empleado06@example.org",
+      "Telefono": null,
+      "IdCargo": "CA04",
+      "Estado": "A"
+    },
+    {
+      "IdEmpleado": "E007",
+      "Nombres": "Elena",
+      "Apellidos": "Paredes Ruiz",
+      "DNI": "90000007",
+      "Correo": "empleado07@example.org",
+      "Telefono": null,
+      "IdCargo": "CA05",
+      "Estado": "A"
+    },
+    {
+      "IdEmpleado": "E008",
+      "Nombres": "Diego",
+      "Apellidos": "Torres Luna",
+      "DNI": "90000008",
+      "Correo": "empleado08@example.org",
+      "Telefono": null,
+      "IdCargo": "CA06",
+      "Estado": "A"
+    },
+    {
+      "IdEmpleado": "E009",
+      "Nombres": "Ricardo",
+      "Apellidos": "Navarro Flores",
+      "DNI": "90000009",
+      "Correo": "empleado09@example.org",
+      "Telefono": null,
+      "IdCargo": "CA07",
+      "Estado": "A"
+    },
+    {
+      "IdEmpleado": "E010",
+      "Nombres": "Daniela",
+      "Apellidos": "Ríos Mendoza",
+      "DNI": "90000010",
+      "Correo": "empleado10@example.org",
+      "Telefono": null,
+      "IdCargo": "CA08",
+      "Estado": "A"
+    }
+  ],
+  "JUEGOS": [
+    {
+      "IdJuego": "J001",
+      "Nombre": "Ruleta",
+      "Descripcion": "Preferencia por ruleta",
+      "IdTipoJuego": "TJ01",
+      "Estado": "A"
+    },
+    {
+      "IdJuego": "J002",
+      "Nombre": "Blackjack",
+      "Descripcion": "Preferencia por blackjack",
+      "IdTipoJuego": "TJ01",
+      "Estado": "A"
+    },
+    {
+      "IdJuego": "J003",
+      "Nombre": "Póker",
+      "Descripcion": "Preferencia por póker",
+      "IdTipoJuego": "TJ01",
+      "Estado": "A"
+    },
+    {
+      "IdJuego": "J004",
+      "Nombre": "Baccarat",
+      "Descripcion": "Preferencia por baccarat",
+      "IdTipoJuego": "TJ01",
+      "Estado": "A"
+    },
+    {
+      "IdJuego": "J005",
+      "Nombre": "Tragamonedas",
+      "Descripcion": "Preferencia por tragamonedas",
+      "IdTipoJuego": "TJ02",
+      "Estado": "A"
+    },
+    {
+      "IdJuego": "J006",
+      "Nombre": "Ruleta electrónica",
+      "Descripcion": "Preferencia por ruleta electrónica",
+      "IdTipoJuego": "TJ03",
+      "Estado": "A"
+    }
+  ],
+  "METODOS_PAGO": [
+    {
+      "IdMetodoPago": "MP01",
+      "MetodoPago": "Efectivo",
+      "Estado": "A"
+    },
+    {
+      "IdMetodoPago": "MP02",
+      "MetodoPago": "Yape",
+      "Estado": "A"
+    },
+    {
+      "IdMetodoPago": "MP03",
+      "MetodoPago": "Plin",
+      "Estado": "A"
+    },
+    {
+      "IdMetodoPago": "MP04",
+      "MetodoPago": "Tarjeta de débito",
+      "Estado": "A"
+    },
+    {
+      "IdMetodoPago": "MP05",
+      "MetodoPago": "Tarjeta de crédito",
+      "Estado": "A"
+    },
+    {
+      "IdMetodoPago": "MP06",
+      "MetodoPago": "Transferencia bancaria",
+      "Estado": "A"
+    }
+  ],
+  "PAGOS": [
+    {
+      "IdPago": "PG1EFE23DA",
+      "IdDetalleVisita": "VDB72A6BD9",
+      "TipoPago": "GASTO",
+      "FechaHoraPago": "2026-11-17 10:00:00",
+      "MontoPagado": 40.0,
+      "IdMetodoPago": "MP01",
+      "IdUsuarioRegistro": "U001",
+      "ReferenciaOperacion": null
+    },
+    {
+      "IdPago": "PG2AC1296A",
+      "IdDetalleVisita": "VDBDD5F414",
+      "TipoPago": "GASTO",
+      "FechaHoraPago": "2026-11-17 16:00:00",
+      "MontoPagado": 40.0,
+      "IdMetodoPago": "MP01",
+      "IdUsuarioRegistro": "U001",
+      "ReferenciaOperacion": null
+    }
+  ],
+  "PROMOCIONES": [
+    {
+      "IdPromocion": "P001",
+      "Nombre": "Promoción A",
+      "Descripcion": "Promoción A para practicar",
+      "FechaInicio": "2026-10-01",
+      "FechaFin": "2026-10-31",
+      "Estado": "A",
+      "Beneficio": "Cupón de cortesía A (ejemplo)",
+      "Condiciones": "Presentar documento y tener la promoción asignada.",
+      "Restricciones": "Uso personal. No transferible. No canjeable por dinero.",
+      "MaxUsosPorCliente": 1
+    },
+    {
+      "IdPromocion": "P002",
+      "Nombre": "Promoción B",
+      "Descripcion": "Promoción B para practicar",
+      "FechaInicio": "2026-10-01",
+      "FechaFin": "2026-10-31",
+      "Estado": "A",
+      "Beneficio": "Cupón de cortesía B (ejemplo)",
+      "Condiciones": "Presentar documento y tener la promoción asignada.",
+      "Restricciones": "Uso personal. No transferible. No canjeable por dinero.",
+      "MaxUsosPorCliente": 1
+    },
+    {
+      "IdPromocion": "P003",
+      "Nombre": "Promoción C",
+      "Descripcion": "Promoción C para practicar",
+      "FechaInicio": "2026-10-01",
+      "FechaFin": "2026-10-31",
+      "Estado": "A",
+      "Beneficio": "Cupón de cortesía C (ejemplo)",
+      "Condiciones": "Presentar documento y tener la promoción asignada.",
+      "Restricciones": "Uso personal. No transferible. No canjeable por dinero.",
+      "MaxUsosPorCliente": 1
+    },
+    {
+      "IdPromocion": "P004",
+      "Nombre": "Promoción D",
+      "Descripcion": "Promoción D para practicar",
+      "FechaInicio": "2026-10-01",
+      "FechaFin": "2026-10-31",
+      "Estado": "A",
+      "Beneficio": "Cupón de cortesía D (ejemplo)",
+      "Condiciones": "Presentar documento y tener la promoción asignada.",
+      "Restricciones": "Uso personal. No transferible. No canjeable por dinero.",
+      "MaxUsosPorCliente": 1
+    },
+    {
+      "IdPromocion": "P005",
+      "Nombre": "Promoción de noviembre",
+      "Descripcion": "Ejemplo ficticio para practicar uso de promociones.",
+      "FechaInicio": "2026-11-01",
+      "FechaFin": "2026-11-30",
+      "Estado": "A",
+      "Beneficio": "Bebida sin alcohol de cortesía.",
+      "Condiciones": "Tener asignación y estar durante una visita.",
+      "Restricciones": "Personal. No transferible. No canjeable por dinero.",
+      "MaxUsosPorCliente": 1
+    }
+  ],
+  "PROVINCIAS": [
+    {
+      "CodigoProvincia": "1501",
+      "Provincia": "Lima",
+      "CodigoDepartamento": "15"
+    }
+  ],
+  "SEGMENTOS_CLIENTES": [
+    {
+      "IdSegmento": "SG01",
+      "Segmento": "Regular"
+    },
+    {
+      "IdSegmento": "SG02",
+      "Segmento": "VIP"
+    }
+  ],
+  "SEGUIMIENTOS_ATENCIONES": [
+    {
+      "IdSeguimiento": "SAD7C4A4CE",
+      "IdAtencion": "S3ABA2A4E0",
+      "FechaSeguimiento": "2026-11-17 11:20:00",
+      "Estado": "Resuelto",
+      "Respuesta": "Se explicó la promoción al cliente.",
+      "IdUsuarioRegistro": "U001"
+    }
+  ],
+  "TIPOS_JUEGO": [
+    {
+      "IdTipoJuego": "TJ03",
+      "TipoJuego": "Electrónico"
+    },
+    {
+      "IdTipoJuego": "TJ02",
+      "TipoJuego": "Máquina"
+    },
+    {
+      "IdTipoJuego": "TJ01",
+      "TipoJuego": "Mesa"
+    }
+  ],
+  "UBIGEO": [
+    {
+      "CodigoUbigeo": "150114",
+      "Distrito": "La Molina",
+      "CodigoProvincia": "1501"
+    },
+    {
+      "CodigoUbigeo": "150116",
+      "Distrito": "Lince",
+      "CodigoProvincia": "1501"
+    },
+    {
+      "CodigoUbigeo": "150121",
+      "Distrito": "Pueblo Libre",
+      "CodigoProvincia": "1501"
+    },
+    {
+      "CodigoUbigeo": "150122",
+      "Distrito": "Miraflores",
+      "CodigoProvincia": "1501"
+    },
+    {
+      "CodigoUbigeo": "150136",
+      "Distrito": "San Miguel",
+      "CodigoProvincia": "1501"
+    },
+    {
+      "CodigoUbigeo": "150140",
+      "Distrito": "Santiago de Surco",
+      "CodigoProvincia": "1501"
+    }
+  ],
+  "USOS_PROMOCIONES": [
+    {
+      "IdUso": "UP04B6FA81",
+      "IdAsignacion": "CPE5256271",
+      "IdDetalleVisita": "VDBDD5F414",
+      "FechaUso": "2026-11-17 16:15:00"
+    }
+  ],
+  "USUARIOS": [
+    {
+      "IdUsuario": "U001",
+      "IdEmpleado": "E001",
+      "NombreUsuario": "lrojas",
+      "Rol": "Administrador",
+      "Estado": "A"
+    },
+    {
+      "IdUsuario": "U002",
+      "IdEmpleado": "E002",
+      "NombreUsuario": "rdiaz",
+      "Rol": "Operador",
+      "Estado": "A"
+    },
+    {
+      "IdUsuario": "U003",
+      "IdEmpleado": "E003",
+      "NombreUsuario": "pleon",
+      "Rol": "Operador",
+      "Estado": "A"
+    },
+    {
+      "IdUsuario": "U004",
+      "IdEmpleado": "E004",
+      "NombreUsuario": "cmedina",
+      "Rol": "Operador",
+      "Estado": "A"
+    },
+    {
+      "IdUsuario": "U005",
+      "IdEmpleado": "E005",
+      "NombreUsuario": "mlopez",
+      "Rol": "Operador",
+      "Estado": "A"
+    },
+    {
+      "IdUsuario": "U006",
+      "IdEmpleado": "E006",
+      "NombreUsuario": "jcastro",
+      "Rol": "Operador",
+      "Estado": "A"
+    },
+    {
+      "IdUsuario": "U007",
+      "IdEmpleado": "E009",
+      "NombreUsuario": "rnavarro",
+      "Rol": "Administrador",
+      "Estado": "A"
+    },
+    {
+      "IdUsuario": "U008",
+      "IdEmpleado": "E010",
+      "NombreUsuario": "drios",
+      "Rol": "Operador",
+      "Estado": "A"
+    }
+  ],
+  "VISITAS": [
+    {
+      "IdVisita": "V323AF66AE",
+      "IdCliente": "C001",
+      "IdUsuarioRegistro": "U001",
+      "FechaHoraInicio": "2026-11-17 10:00:00",
+      "FechaHoraFin": "2026-11-17 11:00:00",
+      "Observacion": "Visita de prueba para la demostración"
+    },
+    {
+      "IdVisita": "VB4F6782AC",
+      "IdCliente": "C001",
+      "IdUsuarioRegistro": "U001",
+      "FechaHoraInicio": "2026-11-17 16:00:00",
+      "FechaHoraFin": "2026-11-17 17:00:00",
+      "Observacion": "Visita de prueba con promoción de noviembre"
+    }
+  ]
+}

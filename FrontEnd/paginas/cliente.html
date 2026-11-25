@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NUEVO CLIENTE | Atlantic City</title>
+        <link rel="stylesheet" href="/vendor/bootstrap.min.css"><link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <div class="marca">
+                <img src="../recursos/logo.png" alt="Atlantic City Casino">
+            </div>
+            <nav aria-label="Navegación principal">
+                <a href="panel.html">Panel principal</a>
+                <a href="clientes.html">Clientes</a>
+                <a href="visitas.html">Visitas y juegos</a>
+                <a href="atencion.html">Atención al cliente</a>
+                <a href="../index.html" id="salir">Salir</a>
+            </nav>
+        </header>
+        <main>
+            <h1>NUEVO CLIENTE</h1>
+            <p class="subtitulo">Completa los datos para registrar al cliente</p>
+            <p id="aviso" class="aviso" role="status" hidden></p>
+            <form id="cliente" class="tarjeta" novalidate>
+                <p class="ayuda">Los campos con * son obligatorios.</p>
+                <div class="rejilla">
+                    <div class="campo">
+                        <label for="tipo">Tipo de documento *</label>
+                        <select id="tipo" name="tipo" required class=" form-select">
+                            <option value="">Selecciona una opción</option>
+                            <option>DNI</option>
+                            <option>Carné de extranjería</option>
+                            <option>Pasaporte</option>
+                        </select>
+                        <small class="error" id="error-tipo" aria-live="polite"></small>
+                    </div>
+                    <div class="campo">
+                        <label for="documento">Número de documento *</label>
+                        <input id="documento" name="documento" type="text" required maxlength="20" class=" form-control">
+                        <small class="error" id="error-documento" aria-live="polite"></small>
+                    </div>
+                    <div class="campo">
+                        <label for="nombres">Nombres *</label>
+                        <input id="nombres" name="nombres" type="text" required maxlength="60" class=" form-control">
+                        <small class="error" id="error-nombres" aria-live="polite"></small>
+                    </div>
+                    <div class="campo">
+                        <label for="apellidos">Apellidos *</label>
+                        <input id="apellidos" name="apellidos" type="text" required maxlength="80" class=" form-control">
+                        <small class="error" id="error-apellidos" aria-live="polite"></small>
+                    </div>
+                    <div class="campo">
+                        <label for="telefono">Teléfono</label>
+                        <input id="telefono" name="telefono" type="tel" maxlength="20" class=" form-control">
+                        <small class="error" id="error-telefono" aria-live="polite"></small>
+                    </div>
+                    <div class="campo">
+                        <label for="correo">Correo electrónico *</label>
+                        <input id="correo" name="correo" type="email" required maxlength="100" class=" form-control">
+                        <small class="error" id="error-correo" aria-live="polite"></small>
+                    </div>
+                    <div class="campo"><label for="pais">País emisor del documento *</label><input required="required" maxlength="60" name="pais" id="pais" class="form-control"><small id="error-pais" class="error"></small></div><div class="campo">
+                        <label for="nacionalidad">Nacionalidad *</label>
+                        <input id="nacionalidad" name="nacionalidad" type="text" required maxlength="50" class=" form-control">
+                        <small class="error" id="error-nacionalidad" aria-live="polite"></small>
+                    </div>
+                    <div class="campo">
+                        <label for="segmento">Segmento *</label>
+                        <select id="segmento" name="segmento" required class=" form-select">
+                            <option value="">Selecciona una opción</option>
+                            <option>Regular</option>
+                            <option>VIP</option>
+                        </select>
+                        <small class="error" id="error-segmento" aria-live="polite"></small>
+                    </div>
+                    
+                    
+                    <div class="campo"><label for="ubigeo">Ubigeo (opcional)</label><select name="ubigeo" id="ubigeo" class="form-select"></select><small id="error-ubigeo" class="error"></small></div>
+                    <div class="campo">
+                        <label for="direccion">Dirección</label>
+                        <input id="direccion" name="direccion" type="text" maxlength="120" class=" form-control">
+                        <small class="error" id="error-direccion" aria-live="polite"></small>
+                    </div>
+                    
+                    <div class="acciones">
+                        <a class="boton secundario" href="clientes.html">Cancelar</a>
+                        <button disabled>Guardar</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer></footer>
+        <script src="../js/comun.js"></script>
+        <script src="../js/clientes.js"></script>
+    </body>
+    </html>
